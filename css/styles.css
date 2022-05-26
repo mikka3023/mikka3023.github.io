@@ -16,7 +16,11 @@ p {
 }
 
 .container-fluid-adoption {
-    padding: 7% 10%;
+    padding: 3% 10% 7% 10%;
+}
+
+.container-fluid-banner {
+    padding: 3% 17% 0%;
 }
 
 /* SECTIONS */
@@ -298,28 +302,25 @@ h3 {
     font-size: 20px;
 }
 
-#card-cont {
-    width: 100%;
-}
+.btncolor{
+    background-color: #faa808;
+    padding: 1rem 2rem!important;
+    color: #ffff;
+    margin-bottom: 2rem;
+  }
 
-.card-header-text {
-    font-weight: 800;
-    font-size: 1rem;
+  .icon-color
+{
+  color:#faa808;
 }
-
-.card-group {
-    padding: 3% 10%;
-}
-
-.card-footer {
-    background-color: transparent;
-    border-top: none;
-}
-
-.btn-p {
-    background-color: #469387;
-    color: white;
-}
+  
+  .package{
+    list-style-type: none;
+  }
+  
+  .pricing{
+   padding-left: 1.5rem;
+  }
 
 /* CTA */
 
@@ -508,6 +509,11 @@ h3 {
     background-color: orangered;
 }
 
+.dogBanners {
+    height: auto;
+    min-height:min-content;
+}
+
 /* ?\Ampawn Form */
 
 .labelAmpawn {
@@ -556,4 +562,17 @@ h3 {
 
 .imgMission {
     background-color: #e49603;
+}
+
+#dogPeek {
+    position: relative;
+    left: -110px;
+    width: 40%;
+    margin: auto;
+    display: block;
+}
+
+#myTabContent {
+    border: 1px solid #e1e1e1;
+    border-top: none;
 }
