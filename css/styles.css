@@ -1,0 +1,553 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+p {
+    color: #8f8f8f;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* CONTAINERS */
+
+.container-fluid {
+    padding: 7% 15%;
+}
+
+.container-fluid-adoption {
+    padding: 7% 10%;
+}
+
+/* SECTIONS */
+
+.colored-section {
+    background-color: #e49603;
+    color: white;
+}
+
+.white-section {
+    background-color: #fefefd;
+}
+
+/* HEADINGS */
+
+.sub-heading-cont {
+    height: auto;
+    padding-left: 10px;
+    border-left: solid 4px #faa808;
+}
+
+.big-heading-cont {
+    width: 75%;
+}
+
+.big-heading {
+    color: #262422;
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-top: 10rem;
+}
+
+/* NAVIGATION BAR */
+
+.navbar {
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.navbar-subpage {
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #262422;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.navLinksMain,
+.navLinksMainLogo {
+    color: #262422 !important;
+    position: relative;
+    transition: all .3s;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+
+.navLinksMain:hover,
+.navLinksMainLogo:hover {
+    color: #625d57 !important;
+}
+
+.navLinksMain:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    right: 30%;
+    height: 4px;
+    border-radius: 2em;
+    background: #faa808;
+    display: block;
+}
+
+/* DOWNLOAD BUTTONS */
+
+.dl-btn {
+    margin: 5% 3% 5% 0;
+    /* background-color: #469387; */
+    border-radius: 0;
+    border-color: #faa808;
+    border-width: 2px;
+    color: #262422;
+}
+
+.dl-btn:hover {
+    background-color: #faa808;
+}
+
+/* TITLE */
+
+#title .container-fluid {
+    text-align: left;
+    padding: 3% 10% 7%;
+}
+
+#blobCont {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.blobDog {
+    width: 80%;
+    top: 6%;
+    left: 10%;
+    position: relative;
+}
+
+.blobA {
+    width: 80%;
+    top: 6%;
+    left: 10%;
+    position: absolute;
+    transform-origin: 50% 50%;
+    animation: blobA_Animation 10s forwards;
+    /* Animation speed and type */
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.blobB {
+    width: 80%;
+    top: 6%;
+    left: 10%;
+    position: absolute;
+    animation: blobB_Animation 5s forwards;
+    /* Animation speed and type */
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blobA_Animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        /* transform: rotate(0deg); */
+    }
+
+    75% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes blobB_Animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        /* transform: rotate(0deg); */
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* FEATURES SECTION */
+
+#features {
+    position: relative;
+}
+
+#featuresBg {
+    background-image: url("../images/dogPattern.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+}
+
+#features .container-fluid {
+    position: relative;
+}
+
+.features-text {
+    font-weight: 600;
+}
+
+.feature-box {
+    padding: 5% 5%;
+}
+
+.feature-icon {
+    color: #faa808;
+    margin: 0 0 1rem 0;
+}
+
+.feature-icon:hover {
+    color: #e49603;
+}
+
+/* TESTIMONIAL SECTION */
+
+#testimonials {
+    background-color: #e49603;
+    height: 400px;
+}
+
+.testimonial-img {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.testimonial-text {
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+
+.carousel-item {
+    min-height: 700px;
+}
+
+/* PRESS */
+
+#press {
+    padding: 0 0 3% 0;
+    background-color: #e49603;
+}
+
+.press-logo {
+    width: 10%;
+    margin: 20px 20px 50px;
+}
+
+/* PRICING */
+
+#pricing {
+    padding: 100px;
+    position: relative;
+}
+
+.price-text {
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+#card-cont {
+    width: 100%;
+}
+
+.card-header-text {
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.card-group {
+    padding: 3% 10%;
+}
+
+.card-footer {
+    background-color: transparent;
+    border-top: none;
+}
+
+.btn-p {
+    background-color: #469387;
+    color: white;
+}
+
+/* CTA */
+
+#cta-copy {
+    font-weight: 900;
+    font-size: 3rem;
+    padding-bottom: 4%;
+    line-height: 1.5;
+}
+
+.cta-btn {
+    margin: 0% 1% 1% 1%;
+}
+
+/* FOOTER */
+
+#footer {
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+.footer-icons {
+    color: #333;
+    margin: 0 1%;
+}
+
+.copyright {
+    font-size: medium;
+}
+
+.wrapper {
+    margin: 0px 70px 0 70px;
+    padding: 10px;
+}
+
+
+.faq-body-text {
+    font-size: 12px;
+}
+
+.missionText {
+    padding: 5% 20%;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.img-crop {
+    width: 400px;
+}
+
+/* Modal Dogs */
+
+.modal-content-dogs {
+    width: 300px;
+    height: 500px;
+    margin: 1.75rem auto;
+    border: 0;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+.modal-body-dogs {
+    padding: 0;
+}
+
+.dogName {
+    position: absolute;
+    top: 17px;
+    left: 22px;
+    color: #262422 !important;
+}
+
+.dogOverlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.dogOverlayCTA {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translateY(100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.dogOverlayIcon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.modalHotspot:hover .dogOverlayCTA {
+    transform: translateY(0%);
+}
+
+.modalHotspot:hover .dogOverlayIcon {
+    transition: all 0.3s ease-in-out 0.2s;
+    opacity: 1;
+}
+
+.modalClose {
+    position: absolute;
+    top: 17px;
+    right: 22px;
+}
+
+.dogSex {
+    position: absolute;
+    top: 42px;
+    left: 22px;
+    font-size: 12px;
+    color: #626262;
+}
+
+.dogBreedInfo {
+    position: absolute;
+    top: 60px;
+    left: 22px;
+    font-size: 10px;
+    width: 250px;
+    text-align: left;
+}
+
+.dogWeight,
+.dogHeight,
+.dogLoc {
+    position: absolute;
+    top: 448px;
+    left: 7px;
+    width: 70px;
+}
+
+.dogHeight {
+    left: 114px;
+}
+
+.dogLoc {
+    left: 222px;
+}
+
+.dogInfo1 {
+    color: #fff;
+    font-size: 12px;
+    padding: 0 0 0 0;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+
+.dogInfo2 {
+    color: #fff;
+    font-size: 9px;
+    padding: 0 0 0 0;
+    line-height: 16px;
+    margin-bottom: 0;
+    opacity: 60%;
+}
+
+.dogCard {
+    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .25) !important;
+    transition: 0.3s;
+}
+
+.dogCard:hover {
+    box-shadow: 0 0rem 1.5rem rgba(250, 168, 8, 1) !important;
+    transform: scale(1.03);
+}
+
+.dogModalBtnCont {
+    position: absolute;
+    right: 80px;
+    top: 70px;
+    width: 300px;
+    color: white;
+}
+
+.dogModalBtn {
+    color: white;
+    background-color: orange;
+}
+
+.dogModalBtn:hover {
+    color: white;
+    background-color: orangered;
+}
+
+/* ?\Ampawn Form */
+
+.labelAmpawn {
+    text-align: start;
+    font-size: 1rem;
+}
+#termsCondition {
+    text-align: start;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1443px) {
+    .big-heading {
+        margin-top: 0rem;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .navLinksMain {
+        display: inline-block;
+    }
+
+    .navLinksMain:hover::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+        right: 30%;
+        height: 4px;
+        border-radius: 2em;
+        background: #faa808;
+        display: block;
+    }
+
+    .big-heading-cont {
+        width: 100%;
+    }
+
+    .big-heading {
+        margin-top: 0rem;
+    }
+}
